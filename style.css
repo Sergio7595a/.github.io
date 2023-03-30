@@ -4,8 +4,11 @@ body {
 }
 
 /* Set main content background color to white */
-.main-content {
+main {
   background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
 }
 
 /* Set heading font color to red */
@@ -22,14 +25,42 @@ a {
 button {
   background-color: #FF4136;
   color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Add box shadow to elements on hover */
-:hover {
+button:hover {
+  background-color: #FF725C;
+}
+
+/* Add box shadow to sections on hover */
+section:hover {
   box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
 }
 
 /* Change font family */
 body {
   font-family: Arial, sans-serif;
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #7FDBFF;
 }
